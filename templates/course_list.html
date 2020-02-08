@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+          <div class="col-sm-4 col-md-4">
+
+                <h1>Courses List</h1>
+                <ol>
+                {% for object in object_list %}
+
+                <li><a href="{{ object.get_absolute_url }}">{{ object}}</a></li>
+                {% endfor %}
+                </ol?
+          </div>
+
+    </div>
+
+</div>
+
+
+
+{% endblock %}
